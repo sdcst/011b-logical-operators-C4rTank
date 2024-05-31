@@ -23,3 +23,33 @@ You are not a VIP.
 """
 
 VIPNames = ("Guile","Blanka","Christine","Carol","Richard","Daniel","Chun-Li")
+
+i = ('Guile') or ("Blanka") or ("Christine") or ("Carol") or ("Richard") or ("Daniel") or ("Chun-Li")
+
+name = str(input("Please input a name: "))
+
+if name == "Guile":
+   print('Hi Guile! You are a VIP!')
+
+elif name == "Blanka":
+    print('Hi Blanka! You are a VIP!')
+
+elif name == "Christine":
+    print('Hi Christine! You are a VIP!')
+
+elif name == "Carol":
+    print('Hi Carol! You are a VIP!')
+
+elif name == "Richard":
+    print('Hi Richard! You are a VIP!')
+
+elif name == "Daniel":
+    print('Hi Daniel! You are a VIP!')
+
+elif name == "Chun-Li":
+    print('Hi Chun-Li! You are a VIP!')
+
+else:
+    print("You are not a VIP.")
+
+#done

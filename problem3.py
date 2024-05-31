@@ -30,3 +30,47 @@ Enter an integer=>4
 Enter an integer=>2
 2,4,5 do not form a Pythagorean triple
 """
+
+import math
+
+a = int(input("Input a number: " ))
+b = int(input("Input a number: " ))
+c = int(input("Input a number: " ))
+
+nums = [a, b, c]
+nums = nums.sort()
+
+a2 = math.pow(a,2)
+b2 = math.pow(b,2)
+c2 = math.pow(c,2)
+
+hyp = max(a2,b2,c2)
+
+if hyp == a2:
+    if b2 + c2 == a2:
+        print(a,b,c,"form a Pythagorean Triple")
+    else:   
+        print(a,b,c,"do NOT form a Pythagorean Triple")
+
+if hyp == b2:
+    if a2 + c2 == b2:
+        print(a,b,c,"form a Pythagorean Triple")
+    else:   
+        print(a,b,c,"do NOT form a Pythagorean Triple")
+
+if hyp == c2:
+    if a2 + b2 == c2:
+        print(a,b,c,"form a Pythagorean Triple")
+    else:   
+        print(a,b,c,"do NOT form a Pythagorean Triple")
+
+#done
+
+
+
+
+
+
+
+
+
